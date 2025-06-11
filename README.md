@@ -2,6 +2,8 @@ Cpu Scheduling Algortihm Visualizer
 
 A web based tool to generate gantt chart and calculate TAT (turnaround time) and WAT (waiting time) based on various scheduling algorithms.
 
+Link - https://cpu-scheduling-ivory.vercel.app/index.html 
+
 
 Steps to Use it - 
 1) Enter the number of processes, the arrival time of each process and burst time for them.
