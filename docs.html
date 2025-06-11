@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./docs.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>OS Virtual Lab</title>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html">OS LAB</a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="docs.html">DOCS</a></li>
+            <!-- <li><a href="blog.html">BLOG</a></li> -->
+            <li><a href="./backend/ganttcharts.html">SIMULATOR</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Documentation</h1>
+    </section>
+
+    <section class="container_docs">
+      <h1>What is CPU Scheduling?</h1>
+      <p>
+        CPU scheduling is the process of deciding which process in the ready
+        queue should be assigned to the CPU next. It’s used in multiprogramming
+        systems to maximize CPU utilization and system responsiveness by
+        switching between processes.
+      </p>
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h2>Why CPU Scheduling?</h2>
+      <p>
+
+          <h3>CPU scheduling is needed for:</h3>
+          
+          <li>Maximize CPU Utilization – Keep the CPU busy as much as possible.</li>
+          
+          <li>
+              Improve Throughput – Increase the number of processes completed in a
+              given time.
+            </li>
+            <li>
+                Reduce Waiting Time – Minimize the time processes spend in the ready
+                queue.
+            </li>
+            <li>Ensure Fairness – Give each process a fair share of CPU time.</li>
+            <li>
+                Support Multiprogramming – Allow multiple processes to run seemingly in
+                parallel.
+            </li>
+        </p>
+        </section>
+        
+    
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>Types of CPU scheduling Algorithm</h1>
+      <p>There are mainly six types of process scheduling algorithm</p>
+      <li>First Come First Serve (FCFS)</li>
+      <li>Shortest-Job-First (SJF) Scheduling</li>
+      <li>Shortest Remaining Time</li>
+      <li>Priority Scheduling</li>
+      <li>Round Robin Scheduling</li>
+      <li>Multilevel Queue Scheduling</li>
+      <br />
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>1) First Come First Serve</h1>
+      <p>
+        First Come First Serve is the full form of FCFS. It is the easiest and
+        most simple CPU scheduling algorithm. In this type of algorithm, the
+        process which requests the CPU gets the CPU allocation first. This
+        scheduling method can be managed with a FIFO queue.<br /><br />
+
+       
+      </p>
+      <button class="btn_1" onclick="gotoSimulator();">Go to Simulator</button>
+      <br />
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>2) Shortest Remaining Time</h1>
+      <p>
+        The full form of SRT is Shortest remaining time. It is also known as SJF
+        preemptive scheduling. In this method, the process will be allocated to
+        the task, which is closest to its completion. This method prevents a
+        newer ready state process from holding the completion of an older
+        process.<br />
+      </p>
+
+     
+      <button class="btn_1" onclick="gotoSimulator();">Go to Simulator</button>
+      <br />
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>3) Priority Based Scheduling</h1>
+      <p>
+        Priority scheduling is a method of scheduling processes based on
+        priority. In this method, the scheduler selects the tasks to work as per
+        the priority.<br /><br />
+
+        Priority scheduling also helps OS to involve priority assignments. The
+        processes with higher priority should be carried out first, whereas jobs
+        with equal priorities are carried out on a round-robin or FCFS basis.
+        Priority can be decided based on memory requirements, time requirements,
+        etc.<br /><br />
+      </p>
+      
+      <button class="btn_1" onclick="gotoSimulator();">Go to Simulator</button>
+      <br />
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>4) Round-Robin Scheduling</h1>
+      <p>
+        Round robin is the oldest, simplest scheduling algorithm. The name of
+        this algorithm comes from the round-robin principle, where each person
+        gets an equal share of something in turn. It is mostly used for
+        scheduling algorithms in multitasking. This algorithm method helps for
+        starvation free execution of processes.<br /><br />
+      </p>
+
+     
+      <button class="btn_1" onclick="gotoSimulator();">Go to Simulator</button>
+      <br />
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>5) Shortest Job First</h1>
+      <p>
+        SJF is a full form of (Shortest job first) is a scheduling algorithm in
+        which the process with the shortest execution time should be selected
+        for execution next. This scheduling method can be preemptive or
+        non-preemptive. It significantly reduces the average waiting time for
+        other processes awaiting execution.<br />
+      </p>
+
+
+      <button class="btn_1" onclick="gotoSimulator();">Go to Simulator</button>
+      <br />
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+      <h1>6) Multiple-Level Queues Scheduling</h1>
+      <p>
+        This algorithm separates the ready queue into various separate queues.
+        In this method, processes are assigned to a queue based on a specific
+        property of the process, like the process priority, size of the memory,
+        etc.<br /><br />
+
+        However, this is not an independent scheduling OS algorithm as it needs
+        to use other types of algorithms in order to schedule the jobs.<br /><br />
+      </p>
+
+      <button class="btn_1" onclick="gotoSimulator();">Go to Simulator</button>
+      <br />
+    </section>
+
+    <section class="footer">
+     
+     
+        <div class="icons">
+          
+            <a href="https://www.instagram.com/aditya_garg21/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/aditya_garg21&"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/igargaditya "><i class="fab fa-linkedin"></i></a>
+        </div>
+
+    
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      function gotoSimulator() {
+        location.href = "./backend/ganttcharts.html";
+      }
+    </script>
+
+    <!-- For the animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200, // offset (in px) from the original trigger point
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
